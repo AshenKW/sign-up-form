@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign-up form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="sidebar">
+        <img
+          src="assets/steven-kamenar-unsplash.jpg"
+          alt="Image of a forest"
+          class="sidebar-image"
+        />
+        <div class="logo-container">
+          <img class="logo" src="assets/odin-logo.png" alt="Odin Logo" />
+          <h1>ODIN</h1>
+        </div>
+        <p class="credit">
+          Foto de
+          <a href="https://unsplash.com/@skamenar">Steven Kamenar</a>
+          en <a href="https://unsplash.com/photos/MMJx78V7xS8">Unsplash</a>
+        </p>
+      </section>
+      <section class="form-section">
+        <div class="header">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <span>now</span> to get started.
+          </p>
+          <p>You <span>know</span> you want to</p>
+        </div>
+        <div class="form-container">
+          <h2>Let's do this!</h2>
+          <form id="my-form" action="">
+            <div class="input">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" required />
+            </div>
+            <div class="input">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" />
+            </div>
+            <div class="input">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="input">
+              <label for="Phone Number">Phone Number</label>
+              <input type="number" name="phone-number" id="phone-number" />
+            </div>
+            <div class="input">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required />
+            </div>
+            <div class="input">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
+          </form>
+        </div>
+        <div class="button-section">
+          <input type="submit" form="my-form" value="Create Account" />
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
